@@ -214,7 +214,7 @@
 
                         try {
                             
-                            const response = await fetch('http://localhost:3000/api/orders', {
+                            const response = await fetch('http://lessonapp-env-1.eba-4arnph5c.eu-west-2.elasticbeanstalk.com/api/orders', {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify(order),
@@ -244,7 +244,7 @@
                 },
                 async updateLessonSpaces(lessonId, newSpaces) {
                     try {
-                        const response = await fetch(`http://localhost:3000/api/lessons/${lessonId}`, {
+                        const response = await fetch(`http://lessonapp-env-1.eba-4arnph5c.eu-west-2.elasticbeanstalk.com/api/lessons${lessonId}`, {
                             method: 'PUT',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ spaces: newSpaces })
