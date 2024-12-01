@@ -166,7 +166,7 @@
             methods: {
                 async fetchLessons() {
                     try {
-                        const response = await fetch('http://localhost:3000/api/lessons');
+                        const response = await fetch('http://lessonapp-env-1.eba-4arnph5c.eu-west-2.elasticbeanstalk.com/api/lessons');
                         if (!response.ok) {
                             throw new Error('Failed to fetch lessons');
                         }
